@@ -1,11 +1,11 @@
 @font-face{
   font-family: cs quipster drawn;
-  src: url(/cs-quipster-drawn-font/CsquipsterdrawnRegularDemo-rvVZL.otf);
+  src: url(cs-quipster-drawn-font/CsquipsterdrawnRegularDemo-rvVZL.otf);
   font-weight: bolder;
 }
 
 html {
-  background-image:url(/images/forestPath.jpg);
+  background-image:url(images/forestPath.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
