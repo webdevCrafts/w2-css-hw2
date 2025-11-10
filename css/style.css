@@ -61,7 +61,6 @@ nav ul li a:hover {
 
 header div#decorativeBar {
   position: relative;
-  bottom: 0px;
   background-color: rgb(104, 124, 5);
   width: 100%;
   height: 1em;
