@@ -61,7 +61,7 @@ nav ul li a:hover {
 
 header div#decorativeBar {
   position: relative;
-  background-color: rgb(104, 124, 5);
+  background-image: linear-gradient(to right,#687c05,beige,#687c05);
   width: 100%;
   height: 1em;
 }
