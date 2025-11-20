@@ -97,7 +97,7 @@ nav ul li a button#skip-button:hover {
 
 nav ul li a button#skip-button>a {
   text-decoration: none;
-  color: #607c06;
+  color: #607c06; !important
 }
 
 nav ul li >button#skip-button>a:hover{
