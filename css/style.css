@@ -1,7 +1,12 @@
 @font-face{
   font-family: cs quipster drawn;
   src: url('../cs-quipster-drawn-font/CsquipsterdrawnRegularDemo-rvVZL.otf');
-  font-weight: bolder;
+
+}
+
+@font-face{
+  font-family: sunflower;
+  src: url('../sunflower-3-font/Sunflower-xRgDm.otf');
 }
 
 html {
@@ -22,21 +27,31 @@ body{
 header{
   background-color: rgba(19, 40, 12, 0.485);
   height: 60%;
+  display: grid;
 }
 
+/*Grading Criteria #4*/
 nav {
+  display: inline-block;
+  width: 80%;
   background-color: #ffffff;
 }
 
 nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   height: 4em;
   width: 90%;
   text-align: center;
   background-color: #ffffff;
   margin: 0em;
+  list-style-type: none;
 }
 
-nav ul li{
+/* Grading Criteria #3 */
+/* nav ul li{
   display: inline-block;
   height: 50%;
   width: 25%;
@@ -47,52 +62,93 @@ nav ul li{
   font-size: 150%;
   margin-right: 5%;
   text-align: center;
-}
+} */
 
 nav ul li a{
   text-decoration: none;
   color: black;
   font-weight:900;
+  font-size: 150%;
+}
+
+nav ul li a[href$=".html"] {
+  font-family: cs quipster drawn;
+}
+
+nav ul li a.current{
+  border: 3px dotted black;
+  font-style: italic;
+  border-radius: 20%;
+  font-family: temporal hidden;
 }
 
 nav ul li a:hover {
   text-shadow: gray 1px 5px 6px;
 }
 
+button#skip-button {
+  border-radius: 30px;
+  padding: 2%;
+  font-size: 50%;
+  background-color: #ffffff;
+  border: 2px solid rgb(87, 87, 87);
+}
+
+button#skip-button:hover {
+  background-color: #607c06;
+}
+
+button#skip-button>a {
+  text-decoration: none;
+}
+
+button#skip-button>a:active, button#skip-button>a:visited {
+  color: #607c06;
+}
+
+button#skip-button>a:hover {
+  color: #ffffff;
+}
+
 header div#decorativeBar {
   position: relative;
-  background-image: linear-gradient(to right,#687c05,beige,#687c05);
-  width: 100%;
+  background-image: linear-gradient(to right, #607c06,beige,#607c06);
+  width: 80%;
   height: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 header h1 {
   text-align: center;
   font-family: cs quipster drawn, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: aliceblue;
-  position: relative;
-  top: 10%;
-  left: 10%;
+  color: #ffffff;
   font-size: 500%;
   text-shadow: #ffffff 0.1em 0.1em 0.5em;
   width: 70%;
   margin: 5%;
 }
 
-figure#baconSitting {
-  display: inline-block;
-  position: relative;
-  left: 33%;
-  height: 50%;
-  width: auto;
-  margin-bottom: 8%;
+nav div#header1-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-figure#baconSitting>img {
-  height: 20em;
-  width: 20em;
-  border-radius: 100%;
+/*Grading Criteria #5*/
+nav figure#baconSitting {
+  width: 10%;
+}
+
+nav figure#baconSitting>img {
+  border-radius: 30%;
 } 
+
+header nav > div{
+  display: flex;
+  justify-content: center;
+}
 
 main {
   background-color: #ffffff;
@@ -107,7 +163,7 @@ main p{
   width: 40%;
   float: left;
   background-color: #fff;
-  border-radius: 10%;
+  border-radius: 80px;
   padding: 2%;
   margin: 5%;
 }
@@ -125,14 +181,42 @@ div#image-collection {
 
 /* For styling the Neighborhood Walks & Parks pages */
 div#image-collection>img {
-  position: relative;
-  left: 5%;
-  display: inline-block;
-  height: 10em;
-  width: 10em;
   border-radius: 20%;
-  margin: 2%;
   box-shadow:gray 0.5em 0em 1em 0.3em ;
+}
+
+/*Grading Criteria #6 & #8*/
+/* For styling just the Neighborhood Walks page */
+div#image-collection.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 1%;
+  overflow: auto;
+}
+
+/*Grading Criteria #7*/
+/* For styling just the Neighborhood Walks page*/
+div#image-collection.grid>img {
+  width: 100%;
+  margin: 2%;
+}
+
+/*Grading Criteria #8 & #9 Pt.1*/
+/* For stlyling just the Michigan Parks page*/
+div#image-collection.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 1em;
+  column-gap: 1em;
+}
+
+/*Grading Criteria #8 & #9 Pt.2*/
+div#image-collection.flex>img {
+  width: 20%;
+  margin: 1em;
 }
 
 footer {
