@@ -102,12 +102,13 @@ button#skip-button>a {
   text-decoration: none;
 }
 
-button#skip-button>a:active, button#skip-button>a:visited {
+button#skip-button>a {
+  text-decoration: none;
   color: #607c06;
 }
 
-button#skip-button>a:hover {
-  color: #ffffff;
+button#skip-button>a[href|="main"]:active, button#skip-button>a[href|="main"]:visited {
+  color: #607c06;
 }
 
 header div#decorativeBar {
