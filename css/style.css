@@ -100,11 +100,11 @@ button#skip-button:hover {
 
 button#skip-button>a {
   text-decoration: none;
+  color: #607c06;
 }
 
-button#skip-button>a {
-  text-decoration: none;
-  color: #607c06;
+button#skip-button>a:focus {
+  background-color: black;
 }
 
 button#skip-button>a[href|="main"]:active, button#skip-button>a[href|="main"]:visited {
