@@ -204,7 +204,7 @@ div#image-collection.grid>img {
   margin: 2%;
 }
 
-/*Grading Criteria #8 & #9 Pt.1*/
+/*Grading Criteria #9 Pt.1*/
 /* For stlyling just the Michigan Parks page*/
 div#image-collection.flex {
   display: flex;
@@ -214,7 +214,7 @@ div#image-collection.flex {
   column-gap: 1em;
 }
 
-/*Grading Criteria #8 & #9 Pt.2*/
+/*Grading Criteria #9 Pt.2*/
 div#image-collection.flex>img {
   width: 20%;
   margin: 1em;
