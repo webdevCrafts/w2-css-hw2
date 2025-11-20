@@ -12,22 +12,33 @@
   <header>
     <nav>
       <ul>
+        <li> <!-- Grading Criteria #2 -->
+          <button id="skip-button">
+            <a href="#main-content">Skip To Main Content</a>
+          </button>
+        </li>
         <li><a href="index.html">Home</a></li>
         <li><a href="neighborhood.html">Neighborhood Walks</a></li>
-        <li><a href="parks.html">Walks in the Park</a></li>
+        <li><a href="parks.html" class="current">Walks in the Park</a></li>
       </ul>
+
+      <div>
+      <figure id="baconSitting">
+        <img src="images/BaconGallupPark.jpg" width="200" alt="Brown Labradoodle sitting next to a statue.">
+      </figure>
+      </div>
+      
     </nav>
+
     <div id="decorativeBar"></div>
   
+    <div id="header1-container">
     <h1>Michigan Parks</h1>
-
-    <figure id="baconSitting">
-    <img src="images/BaconGallupPark.jpg" width="200" alt="Brown Labradoodle sitting next to a statue.">
-    </figure>
+    </div>
     
   </header>
-  <main>
-    <div id="image-collection">
+  <main id="main-content">
+    <div id="image-collection" class="flex">
       <img src="images/bacon_in_the_woods.png" alt="brown labradoodle sitting near a stream in a wooded setting"
         width="100">
       <img src="images/bacon_near_the_fort.png"
