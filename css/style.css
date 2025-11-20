@@ -83,11 +83,7 @@ nav ul li a.current{
   font-family: temporal hidden;
 }
 
-nav ul li a:hover {
-  text-shadow: gray 1px 5px 6px;
-}
-
-button#skip-button {
+nav ul li a button#skip-button {
   border-radius: 30px;
   padding: 2%;
   font-size: 50%;
@@ -95,21 +91,22 @@ button#skip-button {
   border: 2px solid rgb(87, 87, 87);
 }
 
-button#skip-button:hover {
+nav ul li a button#skip-button:hover {
   background-color: #607c06;
 }
 
-button#skip-button>a {
+nav ul li a button#skip-button>a {
   text-decoration: none;
   color: #607c06;
 }
 
-button#skip-button>a:focus {
-  background-color: black;
+nav ul li >button#skip-button>a:hover{
+  text-shadow: gray 1px 5px 6px;
+  color: #ffffff !important
 }
 
-button#skip-button>a[href|="main"]:active, button#skip-button>a[href|="main"]:visited {
-  color: #607c06;
+nav ul li a button#skip-button>a:focus {
+  background-color: black;
 }
 
 header div#decorativeBar {
