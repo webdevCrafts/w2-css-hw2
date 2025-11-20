@@ -72,6 +72,10 @@ nav ul li a{
   font-size: 150%;
 }
 
+nav ul li a:hover {
+  text-shadow: gray 1px 5px 6px;
+}
+
 nav ul li a[href$=".html"] {
   font-family: cs quipster drawn;
 }
